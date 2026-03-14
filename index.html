@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dillu Chaubey | Developer Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
+color:#e2e8f0;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#020617;
+position:sticky;
+top:0;
+border-bottom:1px solid #334155;
+}
+
+.logo{
+font-size:1.6rem;
+font-weight:600;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+}
+
+nav ul li{
+list-style:none;
+margin-left:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#e2e8f0;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:90px 10%;
+flex-wrap:wrap;
+}
+
+.heroText{
+max-width:520px;
+}
+
+.heroText h1{
+font-size:2.8rem;
+}
+
+.heroText span{
+color:#38bdf8;
+}
+
+.heroText p{
+margin-top:15px;
+line-height:1.7;
+color:#94a3b8;
+}
+
+.hero img{
+width:280px;
+border-radius:50%;
+border:5px solid #38bdf8;
+box-shadow:0 0 35px rgba(56,189,248,0.6);
+object-fit:cover;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 28px;
+background:#38bdf8;
+color:#020617;
+text-decoration:none;
+border-radius:6px;
+font-weight:500;
+}
+
+.btn:hover{
+background:#0ea5e9;
+}
+
+/* SOCIAL ICONS */
+
+.social{
+margin-top:20px;
+}
+
+.social a{
+color:#e2e8f0;
+font-size:22px;
+margin-right:15px;
+}
+
+.social a:hover{
+color:#38bdf8;
+}
+
+/* SECTIONS */
+
+section{
+padding:70px 10%;
+}
+
+h2{
+font-size:2rem;
+margin-bottom:25px;
+color:#38bdf8;
+}
+
+/* SKILLS */
+
+.skillsContainer{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.skill{
+background:#2563eb;
+padding:10px 20px;
+border-radius:20px;
+}
+
+/* PROJECTS */
+
+.projectContainer{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.projectCard{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+width:240px;
+}
+
+.projectCard:hover{
+transform:translateY(-8px);
+background:#334155;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+border-top:1px solid #334155;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Dillu's Portfolio</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="heroText">
+
+<h1>Hello I'm <span>Dillu Chaubey</span></h1>
+
+<h3>I am a <span id="element"></span></h3>
+
+<p>
+Passionate developer interested in Web Development,
+C++ programming and building creative projects.
+</p>
+
+<a href="dillu-resume.pdf" download class="btn">
+<i class="fa fa-download"></i> Download Resume
+</a>
+
+<div class="social">
+
+<a href="https://www.instagram.com/dilluchaubey" target="Instagram">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/dillu-kumar-chaubey-b829062b1" target="Linkdin">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://youtube.com/@gecm_wale" target="YouTube">
+<i class="fab fa-youtube"></i>
+</a>
+
+</div>
+
+</div>
+
+<img src="dillu.jpeg" alt="Dillu Photo">
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+Hello! I'm Dillu Chaubey, a passionate developer who enjoys
+programming and building websites.
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skillsContainer">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">C++</div>
+<div class="skill">DSA</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projectContainer">
+
+<div class="projectCard">
+<h3>Portfolio Website</h3>
+<p>Developer portfolio using HTML & CSS.</p>
+</div>
+
+
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: katayandillu@gmail.com</p>
+<p>Phone: 7004842811</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Dillu Chaubey</p>
+
+</footer>
+
+<script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+<script>
+
+var typed = new Typed('#element', {
+strings: ['Web Developer','Programmer','Content Creator'],
+typeSpeed:50,
+loop:true
+});
+
+</script>
+
+</body>
+</html>
+
+
+
