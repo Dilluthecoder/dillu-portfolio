@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -9,9 +9,6 @@
 <title>Dillu Chaubey | Developer Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
@@ -36,8 +33,6 @@ justify-content:space-between;
 align-items:center;
 padding:20px 10%;
 background:#020617;
-position:sticky;
-top:0;
 border-bottom:1px solid #334155;
 }
 
@@ -49,11 +44,12 @@ color:#38bdf8;
 
 nav ul{
 display:flex;
+flex-wrap:wrap;
 }
 
 nav ul li{
 list-style:none;
-margin-left:25px;
+margin-left:20px;
 }
 
 nav ul li a{
@@ -71,8 +67,9 @@ color:#38bdf8;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:90px 10%;
+padding:80px 10%;
 flex-wrap:wrap;
+gap:40px;
 }
 
 .heroText{
@@ -95,10 +92,10 @@ color:#94a3b8;
 
 .hero img{
 width:280px;
+max-width:100%;
 border-radius:50%;
 border:5px solid #38bdf8;
-box-shadow:0 0 35px rgba(56,189,248,0.6);
-object-fit:cover;
+box-shadow:0 0 35px rgba(56,189,248,0.5);
 }
 
 /* BUTTON */
@@ -114,26 +111,6 @@ border-radius:6px;
 font-weight:500;
 }
 
-.btn:hover{
-background:#0ea5e9;
-}
-
-/* SOCIAL ICONS */
-
-.social{
-margin-top:20px;
-}
-
-.social a{
-color:#e2e8f0;
-font-size:22px;
-margin-right:15px;
-}
-
-.social a:hover{
-color:#38bdf8;
-}
-
 /* SECTIONS */
 
 section{
@@ -144,6 +121,14 @@ h2{
 font-size:2rem;
 margin-bottom:25px;
 color:#38bdf8;
+}
+
+/* ABOUT */
+
+.about p{
+max-width:700px;
+line-height:1.8;
+color:#94a3b8;
 }
 
 /* SKILLS */
@@ -163,8 +148,8 @@ border-radius:20px;
 /* PROJECTS */
 
 .projectContainer{
-display:flex;
-flex-wrap:wrap;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:25px;
 }
 
@@ -172,7 +157,7 @@ gap:25px;
 background:#1e293b;
 padding:20px;
 border-radius:12px;
-width:240px;
+transition:0.3s;
 }
 
 .projectCard:hover{
@@ -189,15 +174,57 @@ background:#020617;
 border-top:1px solid #334155;
 }
 
+.socialLinks{
+margin-top:10px;
+}
+
+.socialLinks a{
+margin:0 10px;
+text-decoration:none;
+color:#e2e8f0;
+}
+
+.socialLinks a:hover{
+color:#38bdf8;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+width:200px;
+margin-top:20px;
+}
+
+.heroText h1{
+font-size:2rem;
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav>
 
-<div class="logo">Dillu's Portfolio</div>
+<div class="logo">Dillu</div>
 
 <ul>
 <li><a href="#">Home</a></li>
@@ -224,25 +251,7 @@ Passionate developer interested in Web Development,
 C++ programming and building creative projects.
 </p>
 
-<a href="dillu-resume.pdf" download class="btn">
-<i class="fa fa-download"></i> Download Resume
-</a>
-
-<div class="social">
-
-<a href="https://www.instagram.com/dilluchaubey" target="Instagram">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.linkedin.com/in/dillu-kumar-chaubey-b829062b1" target="Linkdin">
-<i class="fab fa-linkedin"></i>
-</a>
-
-<a href="https://youtube.com/@gecm_wale" target="YouTube">
-<i class="fab fa-youtube"></i>
-</a>
-
-</div>
+<a href="dillu_resume.pdf" download class="btn">Download Resume</a>
 
 </div>
 
@@ -252,13 +261,14 @@ C++ programming and building creative projects.
 
 <!-- ABOUT -->
 
-<section id="about">
+<section id="about" class="about">
 
 <h2>About Me</h2>
 
 <p>
 Hello! I'm Dillu Chaubey, a passionate developer who enjoys
-programming and building websites.
+programming, creating websites and learning new technologies.
+Currently improving skills in Web Development and Data Structures.
 </p>
 
 </section>
@@ -276,6 +286,7 @@ programming and building websites.
 <div class="skill">JavaScript</div>
 <div class="skill">C++</div>
 <div class="skill">DSA</div>
+<div class="skill">Video Editing</div>
 
 </div>
 
@@ -291,10 +302,8 @@ programming and building websites.
 
 <div class="projectCard">
 <h3>Portfolio Website</h3>
-<p>Developer portfolio using HTML & CSS.</p>
+<p>Personal developer portfolio built using HTML and CSS.</p>
 </div>
-
-
 
 </div>
 
@@ -306,14 +315,23 @@ programming and building websites.
 
 <h2>Contact</h2>
 
-<p>Email: katayandillu@gmail.com</p>
-<p>Phone: 7004842811</p>
+<p>Email: yourmail@gmail.com</p>
 
 </section>
 
 <footer>
 
 <p>© 2026 Dillu Chaubey</p>
+
+<div class="socialLinks">
+
+<a href="https://www.instagram.com/dilluchaubey" target="_blank">Instagram</a>
+
+<a href="https://www.linkedin.com/in/dillu-kumar-chaubey-b829062b1" target="_blank">LinkedIn</a>
+
+<a href="https://youtube.com/@gecm_wale" target="_blank">YouTube</a>
+
+</div>
 
 </footer>
 
